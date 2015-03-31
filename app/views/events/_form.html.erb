@@ -1,0 +1,30 @@
+
+<%= form_for @event do |f| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% @event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :details %>
+    <%= f.text_area :details %>
+    <%= f.label :date %>
+    <%= f.text_field :date, :class => "datepicker"%>
+    <%= f.label :time %>
+    <%= f.text_field :time, :class => "timepicker"%>
+
+  <%= f.submit "Submit Event" %>
+
+  <% f.submit (f.object.new_record? ? "Create Event" : "Update Question"), class: "button tiny success" %>
+
+<% end %>
