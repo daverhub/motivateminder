@@ -83,6 +83,7 @@ GEM
     docile (1.1.5)
     domain_name (0.5.23)
       unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.0.0)
     erubis (2.7.0)
     execjs (2.4.0)
     factory_girl (4.5.0)
@@ -248,6 +249,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   coveralls
   devise
+  dotenv
   factory_girl
   foundation-rails
   jbuilder (~> 2.0)

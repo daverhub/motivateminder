@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   root 'homes#index'
   devise_for :users
   resources :events
-  post 'twilio/voice' => 'twilio#voice'
+  resources :twilos do
+    post:send_text_message
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

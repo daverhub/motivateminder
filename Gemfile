@@ -61,3 +61,4 @@ gem 'shoulda-matchers', group: [:development, :test], require: false
 gem 'devise'
 gem 'foundation-rails'
 gem 'twilio-ruby'
+gem 'dotenv'
