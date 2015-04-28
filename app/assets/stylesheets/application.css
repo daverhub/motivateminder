@@ -16,9 +16,3 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
-
- .container {
-   margin-left: 8%;
-   margin-right: 0;
-   min-height: 100%;
- }
